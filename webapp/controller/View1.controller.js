@@ -3,7 +3,7 @@ sap.ui.define([
 ],
 function (Controller) {
     "use strict";
-
+   var that;
     return Controller.extend("curdoperations.controller.View1", {
         onInit: function () {
 
