@@ -1,0 +1,30 @@
+<mvc:View xmlns:core="sap.ui.core" controllerName="curdoperations.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="page2">
+     <List >
+     <infoToolbar>
+     <Toolbar >
+     <Button text="View3"  press="onView3" ></Button>
+     </Toolbar>
+     </infoToolbar>
+     <items>
+     <StandardListItem  title="Page Sector " description="Page infomation related" info="12345"  infoState="Success" infoStateInverted="true" ></StandardListItem>
+          <StandardListItem  title="Page Sector " description="Page infomation related" info="12345"  infoState="Success" infoStateInverted="true" ></StandardListItem>
+
+     <StandardListItem  title="Page Sector " description="Page infomation related" info="12345"  infoState="Success" infoStateInverted="true" ></StandardListItem>
+
+     <StandardListItem  title="Page Sector " description="Page infomation related" info="12345"  infoState="Success" infoStateInverted="true" ></StandardListItem>
+
+     <StandardListItem  title="Page Sector " description="Page infomation related" info="12345"  infoState="Success" infoStateInverted="true" ></StandardListItem>
+
+     <StandardListItem  title="Page Sector " description="Page infomation related" info="12345"  infoState="Success" infoStateInverted="true" ></StandardListItem>
+
+     <StandardListItem  title="Page Sector " description="Page infomation related" info="12345"  infoState="Success" infoStateInverted="true" ></StandardListItem>
+
+     </items>
+     </List>
+
+    
+    </Page>
+</mvc:View>
