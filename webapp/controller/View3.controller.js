@@ -42,6 +42,17 @@ sap.ui.define([
                     Log.error("SplitApp object can't be found");
                 }
                 return result;
+            },
+            onBinddetails:function()
+            {
+                let list = that.byId("_IDGenList2").getSelectedItem().getBindingContext().getObject();
+
+                that.byId("_IDGenObjectListItem1").setTitle(list.PLANT_NAME)
+                that.byId("_IDGenObjectListItem1").setNumber(list.PLANT_REVENUE)
+                that.byId("_IDGenObjectStatus2").setTitle(list.PLANT_HEAD)
+                that.byId("_IDGenObjectAttribute3").setTitle(list.PLANT_LOC)
+                that.byId("_IDGenObjectAttribute4").setTitle(list.PLANT_EMAIL)
+                
             }
 
         });

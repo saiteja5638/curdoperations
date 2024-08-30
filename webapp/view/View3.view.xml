@@ -5,7 +5,24 @@
      <SplitContainer id="_IDGenSplitContainer1" >
      <detailPages>
      <Page id="detail" title="Master-Detail"  backgroundDesign="Solid" 	 >
-     
+	 <ObjectListItem id="_IDGenObjectListItem1"  numberUnit="USD"  >
+	 <firstStatus>
+	 <ObjectStatus id="_IDGenObjectStatus2"   ></ObjectStatus>
+	 </firstStatus>
+	 <ObjectAttribute id="_IDGenObjectAttribute3"  ></ObjectAttribute>
+	 <ObjectAttribute id="_IDGenObjectAttribute4" ></ObjectAttribute>
+	 
+	 </ObjectListItem>
+            <IconTabBar id="_IDGenIconTabBar1">
+                    <items>
+                        <IconTabFilter id="_IDGenIconTabFilter1" text="Tab 1">
+                            <Text id="_IDGenText2" text="Content for Tab 1" />
+                        </IconTabFilter>
+                        <IconTabFilter id="_IDGenIconTabFilter2" text="Tab 2">
+                            <Text id="_IDGenText3" text="Content for Tab 2" />
+                        </IconTabFilter>
+                    </items>
+                </IconTabBar>
      </Page>
      			<Page
 				id="detailDetail"
@@ -50,11 +67,20 @@
      </detailPages>
      <masterPages>
      <Page id="master"  title="Master1" backgroundDesign="List"  >
-     		<List id="_IDGenList2">
-					<StandardListItem id="_IDGenStandardListItem4" title="To Master2" type="Navigation" press=".onPressGoToMaster" />
+     		<List id="_IDGenList2"  items="{/PLANTS}"  mode="SingleSelectMaster" selectionChange="onBinddetails" >
+					<!-- <StandardListItem id="_IDGenStandardListItem4" title="To Master2" type="Navigation" press=".onPressGoToMaster" /> -->
+					<items>
+					<ObjectListItem id="_IDGenObjectListItem2"  title="{PLANT_NAME}" number="{PLANT_REVENUE}"  numberUnit="USD" type="Active"   >
+					<firstStatus>
+					<ObjectStatus id="_IDGenObjectStatus1"  title="{PLANT_HEAD}" ></ObjectStatus>
+					</firstStatus>
+					<ObjectAttribute id="_IDGenObjectAttribute1"  title="{PLANT_LOC}" ></ObjectAttribute>
+					<ObjectAttribute id="_IDGenObjectAttribute2"  title="{PLANT_EMAIL}" ></ObjectAttribute>
+					</ObjectListItem>
+					</items>
 				</List>
      </Page>
-     <Page id="master2"  title="Master2" backgroundDesign="List" showNavButton="true" >
+     <Page id="master2"  title="Master2" backgroundDesign="List" showNavButton="true" navButtonPress=".onPressMasterBack" >
      				<List id="_IDGenList1" itemPress=".onListItemPress">
 					<StandardListItem id="_IDGenStandardListItem1" title="To Detail 1" type="Active" custom:to="detail" />
 					<StandardListItem id="_IDGenStandardListItem2" title="To Detail 2" type="Active" custom:to="detailDetail" />
