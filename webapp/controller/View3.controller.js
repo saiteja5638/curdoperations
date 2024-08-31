@@ -53,6 +53,10 @@ sap.ui.define([
                 that.byId("_IDGenObjectAttribute3").setTitle(list.PLANT_LOC)
                 that.byId("_IDGenObjectAttribute4").setTitle(list.PLANT_EMAIL)
                 
+            },
+            onView4:function()
+            {
+                that.getOwnerComponent().getRouter().navTo("View4")
             }
 
         });

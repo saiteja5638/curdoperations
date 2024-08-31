@@ -1,23 +1,13 @@
 <mvc:View xmlns:core="sap.ui.core" controllerName="curdoperations.controller.View1"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-
-   <HBox class="sapUiSmallMargin" justifyContent="SpaceBetween">
-        <!-- VBox for Buttons -->
-        <VBox id="buttonBox" class="buttonVBox">
-            <Button  text="Button 1" press="Navto2" />
-            <Button id="button2" text="Button 2" />
-            <Button id="button3" text="Button 3" />
-        </VBox>
-
-        <!-- VBox for List Items -->
-        <VBox id="listBox" class="listVBox">
-            <StandardListItem id="listItem1" title="List Item 1" />
-            <StandardListItem id="listItem2" title="List Item 2" />
-            <StandardListItem id="listItem3" title="List Item 3" />
-        </VBox>
-    </HBox>
+    <Page id="page" title="View1">
+    <List id="_IDGenList1"  items="{/PLANTS}" mode="SingleSelectMaster"   selectionChange="onTrigger" >
+    <items>
+    <StandardListItem id="_IDGenStandardListItem1"  title="{PLANT_NAME}"  description="{PLANT_EMAIL}"  info="{PLANT_LOC}" infoStateInverted="true" type="Navigation"  ></StandardListItem>
+    </items>
+    
+    </List>
     
     </Page>
 </mvc:View>

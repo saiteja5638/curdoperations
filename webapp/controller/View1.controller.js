@@ -59,7 +59,21 @@ sap.ui.define([
             },
             Navto2:()=>{
                 that.getOwnerComponent().getRouter().navTo("View2");
+            },
+            onTrigger:function()
+            {
+                let get_selected = that.byId("_IDGenList1").getSelectedItem().getBindingContext().getObject();
+             
+
+                that.getOwnerComponent().getModel("oGmodel").setData({
+                    items:get_selected
+                })
+                that.getOwnerComponent().getRouter().navTo("View2");
+                var oSecondController = sap.ui.controller("curdoperations.controller.View2"); 
+                oSecondController.onBindPropers();
+
             }
+            
 
 
         });

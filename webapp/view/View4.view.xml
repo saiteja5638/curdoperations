@@ -1,0 +1,9 @@
+<mvc:View xmlns:core="sap.ui.core" controllerName="curdoperations.controller.View4"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="View4" titleAlignment="Center"  >  
+
+
+    
+    </Page>
+</mvc:View>

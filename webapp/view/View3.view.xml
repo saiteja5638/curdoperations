@@ -4,7 +4,7 @@
     xmlns="sap.m">
      <SplitContainer id="_IDGenSplitContainer1" >
      <detailPages>
-     <Page id="detail" title="Master-Detail"  backgroundDesign="Solid" 	 >
+     <Page id="detail" title="View3"  backgroundDesign="Solid" 	 >
 	 <ObjectListItem id="_IDGenObjectListItem1"  numberUnit="USD"  >
 	 <firstStatus>
 	 <ObjectStatus id="_IDGenObjectStatus2"   ></ObjectStatus>
@@ -68,6 +68,12 @@
      <masterPages>
      <Page id="master"  title="Master1" backgroundDesign="List"  >
      		<List id="_IDGenList2"  items="{/PLANTS}"  mode="SingleSelectMaster" selectionChange="onBinddetails" >
+			<infoToolbar>
+			<Toolbar >
+			<ToolbarSpacer ></ToolbarSpacer>
+			<Button  text="View3"  press="onView4"  ></Button>
+			</Toolbar>
+			</infoToolbar>
 					<!-- <StandardListItem id="_IDGenStandardListItem4" title="To Master2" type="Navigation" press=".onPressGoToMaster" /> -->
 					<items>
 					<ObjectListItem id="_IDGenObjectListItem2"  title="{PLANT_NAME}" number="{PLANT_REVENUE}"  numberUnit="USD" type="Active"   >

@@ -86,6 +86,12 @@
         "dataSource": "mainService",
         "preload": true,
         "settings": {}
+      },
+      "oGmodel":{
+        "type": "sap.ui.model.json.JSONModel"
+      },
+      "oGmodel2":{
+        "type": "sap.ui.model.json.JSONModel"
       }
     },
     "resources": {
@@ -110,17 +116,22 @@
           "name": "View1",
           "pattern": "",
           "target": "View1"
-      },
-      {
+        },
+        {
           "name": "View2",
           "pattern": "View2",
           "target": "View2"
-      },
-      {
-        "name":"View3",
-        "pattern": "View3",
-        "target":"View3"
-      }
+        },
+        {
+          "name": "View3",
+          "pattern": "View3",
+          "target": "View3"
+        },
+        {
+          "name": "View4",
+          "pattern": "View4",
+          "target": "View4"
+        }
       ],
       "targets": {
         "View1": {
@@ -143,9 +154,15 @@
           "clearControlAggregation": false,
           "viewId": "View3",
           "viewName": "View3"
+        },
+        "View4": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "View4",
+          "viewName": "View4"
         }
       }
-
     },
     "rootView": {
       "viewName": "curdoperations.view.App",
